@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# INFO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was originally made by EdRoh on [GitHub] (https://github.com/ed-roh) and
+[Youtube](https://www.youtube.com/watch?v=wYpCWwD1oz0)
 
-## Available Scripts
+## Why?
 
-In the project directory, you can run:
+I'm learning React.js and I'm documenting issues that I had for others following
+along in 2023. Not likely to continue updating this, but I'll likely use this as
+a boiler plate for future projects.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<details>
+<summary>Initial Comment, just tl;dr resource.</summary>
+>If you have problems with flexbox centering your icons box in your Topbar, just add the marginLeft="auto" style to your <Box> element. Will push it to the right. 
+>
+>There are lots of cases where it seems the video was edited forward, this is typically just to explain context, he goes back. If you're confused, just keep watching and he should catch you up. 
+>
+>At 1:04:07, there's a skip that doesn't go back for some time. Just make sure that your index.js page is rendering the page with BrowserRouter instead of React.Strictmode, refer to his index.js file in github. Otherwise you'll get a blank page, with the browser console error: useRoutes() may be used only in the context of a <Router> component.
+>
+>He also skips some more stuff, but he revisits for an explanation at 1:17:00. For a quick catch up I made a paste bin of what your sidebar return should be, when you get to this point so that you can follow along without confusion. https://pastebin.com/0iwqLghq
+>
+>@fullcalendar/react and @fullcalendar/interaction not installing, I just added --force to the end of the request, got the error: export 'formatDate' (imported as 'formatDate') was not found in '@fullcalendar/react' I read documentation, and formatDate is now in "@fullcalendar/core" so import from there instead.
+>
+>3:10:00 Nivo Line chart no longer supports left axis tickValues parameter. To reduce size in the dashboard I just disabled the axis left with: axisLeft={isDashboard ? undefined : { <rest of axisLeft config> This keeps the ticks but removes the labels, thought it would remove the ticks, but it does not.
+>
+>For some reason ProgressCircle wouldn't render on the dashboard, it would render for the StatBox's but not under Campaign. This was my mistake because I added a % to the progress prop in ProgressCircle.jsx. iirc I was working by ear and I must have heard 75%? After removing, issue was resolved. Extremely strange because it would still render fine in the StatBox? Weird. 
+>
+>
+>Lastly I made some changes to this and uploaded them to my GitHub. I'll list them here:
+>
+>If the body of the page is too long and causes y axis overflow, the sidebar does not extend to the page height. I modified the sidebar.jsx component to address that. 
+>
+>On resize, the nivo map gives a ton of errors that have to do with g3, tbh not gonna mess with that, looks fine, not professional project or anything. 
+>
+>Redid most of the formatting of the StatBox.jsx file, Just didn't come out how Ed had it. Maybe I made a mistake, or it was a browser issue. 
+</details>
