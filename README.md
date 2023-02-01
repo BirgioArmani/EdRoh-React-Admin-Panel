@@ -35,6 +35,10 @@ a boiler plate for future projects.
 
 ## Problems Log
 
-## <p>Issues will be fixed and comments will be made in the jsx file where the issue occured.</p>
+<p>Issues will be fixed and comments will be made in the jsx file where the issue occured.</p>
 
-<p>Had an issue with the Sidebar component not filling the page when the page had y overflow. Added to ./src/scenes/global/Sidebar.jsx</p>
+## Sidebar component
+
+<p>Had an issue with the Sidebar component not filling the page when the page had y overflow. Fix added to ./src/scenes/global/Sidebar.jsx</p>
+<p>StatBox formatting didn't work out, a lot of issues with flexbox. Fixed, ./src/components/StatBox.jsx</p>
+<p>Nivo Map Errors on resize due to g3, will fix because I plan on using this as a boilerplate for future projects.</p>
