@@ -1,7 +1,8 @@
 # INFO
 
-This was originally made by EdRoh on [GitHub] (https://github.com/ed-roh) and
-[Youtube](https://www.youtube.com/watch?v=wYpCWwD1oz0)
+This was originally made by EdRoh on [GitHub](https://github.com/ed-roh) and
+[Youtube](https://www.youtube.com/channel/UCMoEx7gz7IbJHv733yEi2aA).
+[Link to Guide](https://www.youtube.com/watch?v=wYpCWwD1oz0)
 
 ## Why?
 
@@ -31,3 +32,9 @@ a boiler plate for future projects.
 
 <p>Redid most of the formatting of the StatBox.jsx file, Just didn't come out how Ed had it. Maybe I made a mistake, or it was a browser issue. </p>
 </details>
+
+## Problems Log
+
+## <p>Issues will be fixed and comments will be made in the jsx file where the issue occured.</p>
+
+<p>Had an issue with the Sidebar component not filling the page when the page had y overflow. Added to ./src/scenes/global/Sidebar.jsx</p>
